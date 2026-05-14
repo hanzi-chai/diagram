@@ -1,0 +1,21 @@
+{
+  "name": "diagram",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:svg": "bun src/render.ts > diagram.svg",
+    "build:pdf": "inkscape diagram.svg --export-filename=diagram.pdf --export-area-page --export-text-to-path",
+    "build": "bun run build:svg && bun run build:pdf"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.15",
+    "@types/node": "^25.7.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}
