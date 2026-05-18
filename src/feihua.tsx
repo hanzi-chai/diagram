@@ -248,7 +248,7 @@ const GAP_Y = 8;
 const MARGIN_X = 24;
 const MARGIN_Y = 24;
 const INFO_HEIGHT = 44;
-const FONT_FAMILY = '"Noto Sans CJK SC", "Noto Serif SC Chai", sans-serif';
+const FONT_FAMILY = '"Noto Sans CJK SC", "Chai Sans", sans-serif';
 const CHAR_SIZE = 14;
 const ENTRY_HEIGHT = 24;
 const LABEL_Y = 24;
@@ -422,7 +422,7 @@ interface DiagramProps {
   fontFaceCSS?: string;
 }
 
-export function Diagram({ fontFaceCSS }: DiagramProps) {
+export default function 冰雪飞花({ fontFaceCSS }: DiagramProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

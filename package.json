@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build:svg": "bun src/render.ts > diagram.svg",
-    "build:pdf": "inkscape diagram.svg --export-filename=diagram.pdf --export-area-page --export-text-to-path",
-    "build": "bun run build:svg && bun run build:pdf"
+    "build": "bun src/build.ts"
   },
   "dependencies": {
     "react": "^18",
